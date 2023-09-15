@@ -8,23 +8,38 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
+
 	  gtag('config', 'G-N8Q1EQMMSZ');
 	</script>
-	
+	<!--타이틀-->
 	<title>WEB-1 practice</title>
 	<meta charset="utf-8">
 	<!--CSS부분-->
 	<style>
-		a{text-decoration:none;}
-		h1{font-size:60px;}
-		h2{font-size:35px;}
+		/**/
+		a{
+			text-decoration:underline;
+		}
+		/*block level tag*/
+		h1{
+			font-size:60px;
+			/*border:5px solid blue;
+			padding:20px;*/
+		}
+		/*inline tag*/
+		h2{
+			font-size:35px;
+		}
+		/*클래스.link*/
+		.link{
+			color:blue;
+		}
 	</style>
 	
 </head>
 <!--몸통-->
 <body>
-	
+	<!--""-->
    <h1 style="text-align:center;">Codit</h1><br>
    <!--1번째 단락-->
 	<p><ul>
@@ -34,14 +49,15 @@
 	<!--2번째 단락-->	
 	<p><ul>
 	<h2>Web의 구성</h2>
-	<li>link(<a href="https://ko.wikipedia.org/wiki/HTML" title="HTML">HTML</a>)</li>
-	<li>link(<a href="https://ko.wikipedia.org/wiki/CSS" title="CSS" >CSS</a>)</li>
-	<li>link(<a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" title="JavaScript">JavaScript</a>)</li>
+	<li>link(<a href="https://ko.wikipedia.org/wiki/HTML" title="HTML"class="link">HTML</a>)</li>
+	<li>link(<a href="https://ko.wikipedia.org/wiki/CSS" title="CSS"class="link" >CSS</a>)</li>
+	<li>link(<a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" title="JavaScript"class="link">JavaScript</a>)</li>
 	</ul><p>
 	<!--3번째 단락-->
 	<p><ul>
 	<h2>코딩문제 푸는 사이트</h2><br>
-	<li style="text-decoration:underline">백준:<a href="https://www.acmicpc.net/" target="_blank" title="백준">link.com</a></li>	
+	<li>백준:<a href="https://www.acmicpc.net/" target="_blank" title="백준">link</a></li>	
 	</ul><p> 
 </body>
 </html>
+	
