@@ -1,7 +1,7 @@
 
 
-document.getElementById('CheckIn').addEventListener('click',)
+document.getElementById('CheckIn').addEventListener('click',CheckIn)
 
 function CheckIn() {
-    document.getElementById('CheckIn').style = {'background-color' : 'red'}
+    document.getElementById('CheckIn').style.backgroundColor = "red";
 }
