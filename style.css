@@ -1,0 +1,34 @@
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+a{
+    text-decoration:underline;
+    color: blue;
+}
+/*block level tag*/
+h1{
+    font-size:60px;
+    text-align: center;
+    /*border:5px solid blue;
+    padding:20px;*/
+}
+/*inline tag*/
+h2{
+    font-size:35px;
+}
+
+@media (prefer-color-scheme: light) {
+    :root{
+        --background: #FAFAFA;
+        --text: #2B2B2B;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --background: #2B2B2B;
+        --text: #FAFAFA
+    }
+}
