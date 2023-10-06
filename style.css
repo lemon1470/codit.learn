@@ -19,16 +19,12 @@ h2{
     font-size:35px;
 }
 
-@media (prefer-color-scheme: light) {
-    :root{
-        --background: #FAFAFA;
-        --text: #2B2B2B;
-    }
+:root[color-theme='light'] {
+    --background: #FAFAFA;
+    --text: #2B2B2B;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root{
-        --background: #2B2B2B;
-        --text: #FAFAFA
-    }
+:root[color-theme='dark'] {
+    --background: #2B2B2B;
+    --text: #FAFAFA
 }

@@ -1,12 +1,11 @@
-document.getElementById('theme').addEventListener('click', changeTheme)
+window.addEventListener('DOMContentLoaded',() => document.documentElement.setAttribute('color-theme', 'light'))
 
-function changeTheme() {
-    switch (document.documentElement.getAttribute('data-theme')) {
-    case 'dark': {
-            document.documentElement.setAttribute('data-theme', 'light');
-        } 
-    case 'light': {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }    
-    }
-}
+const checkbox = document.getElementById('theme');
+
+checkbox.addEventListener('click', e => {
+  if (e.target.checked) {
+    document.documentElement.setAttribute('color-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('color-theme', 'light');
+  }
+});
